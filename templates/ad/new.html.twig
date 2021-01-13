@@ -1,0 +1,26 @@
+{% extends 'base.html.twig'%}
+
+{% block title %}Create Listening{% endblock %}
+
+{% form_theme form 'ad/_collection.htm.twig' %}
+
+{% block body %}
+    <div class="container">
+                <h1 class=" h1 mt-5 mb-5">Host your home</h1>
+
+                {{ form_start(form) }}
+
+                    {{ form_widget(form) }}
+
+                    <button type="submit" class="btn btn-primary mt-2">Host your visitor now</button>
+
+                {{ form_end(form) }}
+    </div>
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script src="{{ asset('js/ad.js') }}"></script>
+
+{% endblock %}

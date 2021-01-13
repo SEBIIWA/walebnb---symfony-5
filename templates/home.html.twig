@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Welcome {%  endblock %}
+{% block header %}
+    <h2>Voici mon header</h2>
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    <div class="jumbotron mt-3">
+        <h1 class="display-3">Welcome to my BNB</h1>
+        <p class="lead">Whether you’re looking for a treehouse for the weekend or an entire home for the whole family, a warm welcome awaits. Behind every stay is a real person who can give you the details you need to check in and feel at home.!</p>
+        <hr class="my-4">
+        <p>you are a traveler ? why don't you check out our ads</p>
+        <p class="lead">
+            <a class="btn btn-primary" href="/ads" role="button">Explore us</a>
+        </p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listening{% endblock %}
+
+{% block body %}
+    <div class="container">
+
+        <h2 class="h1 mt-5 mb-4">this is our lists of houses</h2>
+
+            <div class="row mt-5">
+                {% for ad in ads %}
+                    {% include('ad/_ad.html.twig') %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
